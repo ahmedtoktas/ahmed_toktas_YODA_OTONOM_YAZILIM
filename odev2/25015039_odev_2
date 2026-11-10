@@ -1,0 +1,32 @@
+Temel Git ve Github ifadeleri:
+Repository: Bir yazılım projesine ait dosyaların ve bu dosyalarda yapılan değişikliklerin kaydedildiği alandır. Projenin kodları burada saklanır. GitHub üzerinde bir hesap makinesi oluşturdum. Bu hesap makinesi için yazdığım Python kodunu ve README dosyasını ekledim.
+Commit: Projede yapılan değişikliklerin açıklama içeren bir kayıt olarak Git geçmişine eklenmesidir. Böylece projenin önceki sürümlerine dönmek veya yapılan değişiklikleri incelemek mümkün olur. Hesap makinesine toplama işlemini ekledikten sonra ‘’Toplama işlemi’’ adlı bir commit oluşturdum.
+Brach: Ana projeyi değiştirmeden yeni algoritmalar oluşturmak için bulunan ayrı bir çalışma dalıdır. Hesap makinesine çarpma işlemi eklemek için ‘’carpma-islemi’’ adında yeni bir branch oluşturdum. Böylece ana branch olan  üzerindeki kodları değiştirmememe rağmen çarpma işlemi üzerinde çalışabildim.
+Stage: Yapılan değişikliklerden commit işlemine dahil edilmek istenen dosyaların seçildiği hazırlık alanıdır. Her değişiklik otomatik olarak commit'e dahil edilmez. Python dosyasında toplama ve çıkarma işlemlerini geliştirdim.  Toplama işlemiyle ilgili değişiklikleri commit ile bu dosyadaki ilgili değişiklikleri stage alanına ekledim.
+Merge:  Branch'larda yapılan değişiklikleri bir branch altında birleştirir. Yani geliştirilen özellikler ana projeye aktarılabilir. ‘’carpma-islemi’ branch'ında geliştirdiğim çarpma işlemini tamamladıktan sonra bu branch'i main  branch'i ile birleştirdim. ‘’carpma-islemi’’ branchı’nı artık ana kodlamamda kullanabilir hale geldim.
+Pull: GitHub’ta bulunan değişiklikleri bilgisayardaki depoya indirerek onu daha sonraki çalışmalarda kullanılmasını sağlar. Projeyi başka bir bilgisayardan GitHub üzerinde daha önce eklediğim kodların son hâlini almak için pull kullandım.
+Push: Oluşturulan commit kayıtlarının depoya gönderilmesidir. Commit kayıtları depoya gönderilerek GitHub üzerinde görülebilir hale gelir. Hesap makinesine yeni özellikler ekleyip commit işlemini tamamladıktan sonra push komutuyla değişiklikleri GitHub'daki depoya gönderdim.
+Takımlar neden Git ve Github kullanır?
+Versiyon kontrol sistemi: Bir dosya veya yazılım projesi üzerinde zaman içinde yapılan değişiklikleri kaydeden ve gerektiğinde önceki sürümlere dönmeyi sağlayan sistemdir. Örneğin bir takım üyesinin yazılım kodunda yaptığı değişiklik diğer takım arkadaşlarının o kodda çalışamamasına neden olabilir. Bunu önlemek için versiyon kontrol sistemi kullanılıyor.
+Git’te yapılan değişiklikler commit isimli dosyalarda saklanır. Böylece eski çalışmalara tekrar tekrar dönülüp üzerinde çalışılabilir.
+Git ve GitHub arasındaki fark nedir?
+Git, yazılım projelerindeki değişiklikleri takip etmeyi sağlayan açık kaynaklı ve dağıtık bir versiyon kontrol sistemidir. GitHub ise Git kullanılarak yönetilen projelerin kaydedilmesi ve diğer ekip üyelerinin de o projelere bakıp üzerinde değişiklik yapılabilmesini sağlar.
+Ekip çalışmasına katkıları nelerdir?
+Bir yazılım projesinde birden fazla kişinin aynı anda çalışması gerektiğinde Git ve GitHub ekip üyelerinin çalışmalarını düzenli bir şekilde birleştirmesini ve kaydedilmesini sağlar. Bunun için Git’te branch özelliği kullanılır. Örneğin bir aracın sensör yazılımı ayrı bir branş dosyasındayken aracın şerit tespit yazılımı ayrı branş dosyasında tutulur.
+Pull request: Şerit tespiti algoritmasını geliştiren üye bir Pull Request açarak değişikliklerini ana projeye önerebilir.
+Code review: Şerit takibi algoritmasında değiştirilen kodların diğer takım üyeleri tarafından incelenmesidir.
+Merge Conflict: Şerit takibi algoritmasında yapılan değişiklerde bir üyenin şerit genişliğini 1 metre alıp diğerinin 2 metre alması gibi birbiriyle çelişen durumlara denir.
+GitHub’ın proje yönetimi özellikleri: 
+GitHub issues: Projede yapılması gereken geliştirme önerileri Issue olarak oluşturulabilir.
+GitHub Projects: Takımın görevlerini tablo şeklinde düzenlemesini sağlar. Kimin ne yapması gerektiği belli olmuş olur.
+README ve Wiki: Projenin amacı, kurulumu, kullanılan teknolojiler, kodların çalışma şekli ve kullanım talimatları README dosyasında açıklanabilir.
+GitHub Actions: Yazılımdaki bazı kodların otomatik olarak gerçekleştirilmesini sağlar. Mesela bir geliştirici kodunu GitHub'a gönderdiğinde testler otomatik çalıştırılır.
+
+Kulüp ve takımlar için önemi:
+Git ve GitHub takımın geliştirdiği yazılımları bir depoda saklanabilir. Böylece bir üye takımdan ayrıldığında yaptığı çalışmalar yalnızca kendi bilgisayarında kalmayıp diğer üyeler tarafından erişilebilir olmaya devam eder.
+Otonom araç projesindeki yeri:
+Otonom araçlar algılama, karar verme, kontrol, görüntü işleme ve haberleşme gibi farklı yazılım algoritmaları içerir. Git ve GitHub bunlar için kamera ve sensör verilerinin işlenmesi, aracın hız,fren,direksiyon ayarlarını düzenleme vb. işlevleri yerine getirir.
+Dikkat edilmesi gerekenler nelerdir?
+Her üyenin ana projeye değişiklik göndermesi hatalı kodların kontrol edilmeden projeye eklenmesine neden olabilir. Bu nedenle branch ve Pull Request sistemi kullanılmalıdır.
+Pull Request'lerin test edilmeden veya incelenmeden birleştirilmesi yazılım hatalarına yol açabilir. Önemli değişiklikler üyeler tarafından kontrol edilmelidir.
+API anahtarları, şifreler ve erişim bilgileri GitHub üzerindeki depolara yüklenmemelidir. Bu bilgiler ayrı ve güvenli bir şekilde saklanmalıdır. Aksi takdirde veriler afişe olabilir.
