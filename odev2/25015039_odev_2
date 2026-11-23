@@ -22,6 +22,13 @@ GitHub Projects: Takımın görevlerini tablo şeklinde düzenlemesini sağlar. 
 README ve Wiki: Projenin amacı, kurulumu, kullanılan teknolojiler, kodların çalışma şekli ve kullanım talimatları README dosyasında açıklanabilir.
 GitHub Actions: Yazılımdaki bazı kodların otomatik olarak gerçekleştirilmesini sağlar. Mesela bir geliştirici kodunu GitHub'a gönderdiğinde testler otomatik çalıştırılır.
 
+öğrendiğim komutlar:
+git commit değişiklikleri git geçmişine kaydeder.
+git checkout başka bir brancha geçmeyi sağlar.
+git branch yeni bir branch oluşturmayı sağlar.
+git switch branchlar arası geçiş yapmamızı sağlar.
+git merge iki ataya sahip commit oluşturur.
+
 Kulüp ve takımlar için önemi:
 Git ve GitHub takımın geliştirdiği yazılımları bir depoda saklanabilir. Böylece bir üye takımdan ayrıldığında yaptığı çalışmalar yalnızca kendi bilgisayarında kalmayıp diğer üyeler tarafından erişilebilir olmaya devam eder.
 Otonom araç projesindeki yeri:
